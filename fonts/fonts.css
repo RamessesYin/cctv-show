@@ -1,0 +1,18 @@
+        @font-face {
+          font-family: 'HelveticaLTStd-Bold';
+          src: url('HelveticaLTStd-Bold.eot?') format('eot'),
+               url('HelveticaLTStd-Bold.woff') format('woff'),
+               /* url('HelveticaLTStd-Bold.svg#HelveticaLTStd-Bold') format('svg'), */
+               url('HelveticaLTStd-Bold.ttf')  format('truetype');
+          font-weight: bold;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: 'HelveticaLTStd-Roman';
+          src: url('HelveticaLTStd-Roman.eot?') format('eot'),
+               url('HelveticaLTStd-Roman.woff') format('woff'),
+               /* url('HelveticaLTStd-Roman.svg#HelveticaLTStd-Roman') format('svg'), */
+               url('HelveticaLTStd-Roman.ttf')  format('truetype');
+          font-weight: normal;
+          font-style: normal;
+        }

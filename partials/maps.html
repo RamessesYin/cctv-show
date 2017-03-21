@@ -1,0 +1,518 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CCTV大数据分析平台</title>
+        <meta charset="utf-8" />
+        <!-- STYLESHEETS -->
+            <link rel="stylesheet" href="static/css/bootstrap.min.css"  type="text/css">
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <link href="static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <!-- EXTRASTYLES -->
+        <!--{% block extrastyle %}{% endblock %}-->
+          <!-- Tell the browser to be responsive to screen width -->
+          <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+          <!-- Font Awesome -->
+          <link rel="stylesheet" href="static/css/font-awesome.min.css">
+          <!-- Ionicons -->
+          <link rel="stylesheet" href="static/css/ionicons.min.css">
+          <!-- Theme style -->
+          <link rel="stylesheet" href="static/css/dist/css/AdminLTE.min.css">
+          <!-- AdminLTE Skins. Choose a skin from the css/skins
+               folder instead of downloading all of them to reduce the load. -->
+          <link rel="stylesheet" href="static/css/dist/css/skins/_all-skins.min.css">
+          <!-- iCheck -->
+          <link rel="stylesheet" href="static/css/plugins/iCheck/flat/blue.css">
+          <!-- Morris chart -->
+          <link rel="stylesheet" href="static/css/plugins/morris/morris.css">
+          <!-- jvectormap -->
+          <link rel="stylesheet" href="static/css/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+          <!-- Date Picker -->
+          <link rel="stylesheet" href="static/css/plugins/datepicker/datepicker3.css">
+          <!-- Daterange picker -->
+          <link rel="stylesheet" href="static/css/plugins/daterangepicker/daterangepicker.css">
+          <!-- bootstrap wysihtml5 - text editor -->
+          <link rel="stylesheet" href="static/css/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+<!--           <link rel="stylesheet" href="css/application.css">
+ -->
+  <link href='css/application.css' media='screen' rel='stylesheet' type='text/css'>
+
+            <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+ <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  Ionicons
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- jvectormap --> 
+  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <link rel='styleshddeet' href='css/googleRoboto.css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+
+ <link rel="stylesheet" href="css/ref1.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="css/ref2.css">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="plugins/morris/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+ <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  Ionicons
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- jvectormap --> 
+  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <link rel='styleshddeet' href='css/googleRoboto.css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+
+
+    <meta content='width=device-width, minimum-scale=1, maximum-scale=1' name='viewport'>
+    <link href='css/application.css' media='screen' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/lib/jquery-1.6.2.min.js"></script>
+
+<!-- <link type="text/css" rel="stylesheet" href="css/new.css" /> -->
+
+        <!-- EXTRASCRIPTS FOR D3-->
+        <script src="d3.v3.min.js"></script>
+        <!-- EXTRASTYLES FOR D3-->
+        <link rel="stylesheet" type="text/css" href="sequences.css"/>
+        
+        <!-- JAVASCRIPTS -->
+        <!--{% block javascripts %}-->
+            <!-- jQuery, jQuery-UI -->
+            <script src="static/js/jquery-3.1.0.min.js" type="text/javascript"></script>
+            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+            <!--[if lt IE 9]>
+              <script src="static/js/html5shiv.min.js"></script>
+              <script src="static/js/respond.min.js"></script>
+            <![endif]-->
+        <!--{% endblock %}-->
+        <!--{% block extrascript1 %}{% endblock %}-->
+        
+    </head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="{% url 'cg:home' %}" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>CCTV</b> </span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>CCTV</b> Show</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- The user image in the navbar-->
+              <img src="static/img/user.jpg" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs">Root</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- The user image in the menu -->
+              <li class="user-header">
+                <img src="static/img/user.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  用户名 - 角色
+                  <small>XX年XX月注册</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-6 text-center">
+                    <a href="#">上级用户</a>
+                  </div>
+                  <div class="col-xs-6 text-center">
+                    <a href="#">下级用户</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">个人信息</a>
+                </div>
+                <div class="pull-right">
+                  <a href="{% url 'cg:logout' %}" class="btn btn-default btn-flat">退出</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="static/img/user.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>用户名</p>
+        </div>
+      </div>
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <li class="header">OPTIONS</li>
+        <li><a href="index.html#/home"><i class="fa fa-table"></i> <span>Dashboard</span></a></li>
+        <li><a href="index.html#/pie"><i class="fa fa-table"></i> <span>行为模式</span></a></li>
+    <!--     <li class="treeview">
+          <a href="#"><i class="fa fa-files-o"></i> <span>查看B</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{% url 'cg:uploadExcel' %}"><i class="fa fa-circle-o"></i>查看B1</a></li>
+            <li><a href="{% url 'cg:uploadExcel' %}"><i class="fa fa-circle-o"></i>查看B2</a></li>
+          </ul>
+        </li> -->
+         <li><a href="index.html#/summaryChart"><i class="fa fa-table"></i> <span>统计信息</span></a></li>
+          <li><a href="index.html#/alluvial"><i class="fa fa-table"></i> <span> EPG总览</span></a></li>
+        <li><a href="#"><i class="fa fa-table"></i> <span>用户分布</span></a></li>
+        <li><a href="index.html#/line"><i class="fa fa-table"></i> <span>收视指数</span></a></li
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+      <div class="row">
+      <div class="col-xs-1"></div>
+
+
+  <div class="col-xs-9">
+  <div class="col-xs-6">
+<div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input name="daterange" value="09/12/2016 - 09/17/2016" class="form-control pull-right" type="text">
+                </div>
+  </div>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:600px;width:800px"></div>
+    
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- ECharts单文件引入 -->
+    <script src="js/echarts-all.js"></script>
+    
+    <script type="text/javascript">
+        var _day = 3;
+        // 基于准备好的dom，初始化echarts图表
+        var date = '20160911';
+        function drawData(date, _day) {
+        var myChart = echarts.init(document.getElementById('main'), 'infographic'); 
+        var ecConfig = echarts.config;  
+        var zrEvent = zrender.tool.event;
+        var curIndx = 0;
+        var mapType = [
+            'china',
+            // 23个省
+            '广东', '青海', '四川', '海南', '陕西', 
+            '甘肃', '云南', '湖南', '湖北', '黑龙江',
+            '贵州', '山东', '江西', '河南', '河北',
+            '山西', '安徽', '福建', '浙江', '江苏', 
+            '吉林', '辽宁', '台湾',
+            // 5个自治区
+            '新疆', '广西', '宁夏', '内蒙古', '西藏', 
+            // 4个直辖市
+            '北京', '天津', '上海', '重庆',
+            // 2个特别行政区
+            '香港', '澳门'
+        ];
+        //document.getElementById('main').onmousewheel = function (e){
+        //    var event = e || window.event;
+        //    curIndx += zrEvent.getDelta(event) > 0 ? (-1) : 1;
+        //    if (curIndx < 0) {
+        //        curIndx = mapType.length - 1;
+        //    }
+        //    var mt = mapType[curIndx % mapType.length];
+        //    if (mt == 'china') {
+        //        option.tooltip.formatter = '点击进入<br/>{b}';
+        //    }
+        //    else{
+        //        option.tooltip.formatter = '点击返回<br/>{b}';
+         //   }
+       //     option.series[0].mapType = mt;
+        //    option.title.subtext = mt + ' （滚轮或点击切换）';
+        //    myChart.setOption(option, true);
+
+         //   zrEvent.stop(event);
+       // };
+        myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param){
+            var len = mapType.length;
+            var mt = mapType[curIndx % len];
+            if (mt == 'china') {
+                // 全国选择时指定到选中的省份
+                var selected = param.selected;
+                for (var i in selected) {
+                    if (selected[i]) {
+                        mt = i;
+                        while (len--) {
+                            if (mapType[len] == mt) {
+                                curIndx = len;
+                            }
+                        }
+                        break;
+                    }
+                }
+                option.tooltip.formatter = '点击返回<br/>{b} ({c})';
+            }
+            else {
+                curIndx = 0;
+                mt = 'china';
+                option.tooltip.formatter = '点击进入<br/>{b} ({c})';
+            }
+            option.series[0].mapType = mt;
+            option.title.subtext = mt + ' （点击切换）';
+            myChart.setOption(option, true);
+        });
+        // 地图数据地址
+        var json;
+        // 用datepicker选日期
+        url = 'http://202.120.39.166:6888/v1.0/area/' + date + '/' + _day;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': url,
+            'dataType': "json",
+            'headers': {'Authorization':'Basic cm9vdDoxMjM0NTY='},
+            'success': function (data) {
+                json = data;
+            }
+        });
+        
+        var points=[];
+        var _max = 0;
+        for (var k in json) {
+            var v = json[k];
+            if (v>_max) {
+                _max = v;
+            }
+            var tmp = {
+                name:k,
+                value:v,
+            };
+            points.push(tmp);
+        };
+        console.log(json);
+        console.log(points);
+        option = {
+            title: {
+                text : '全国34个省市自治区',
+                subtext : 'china （点击切换）'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: '点击进入<br/>{b} ({c})'
+            },
+            legend: {
+                orient: 'vertical',
+                x:'right',
+                data:['分地区数据']
+            },
+            dataRange: {
+                min: 0,
+                max: _max,
+                color:['orange','yellow'],
+                text:['高','低'],           // 文本，默认为数值文本
+                calculable : true
+            },
+            series : [
+                {
+                    name: '随机数据',
+                    type: 'map',
+                    mapType: 'china',
+                    selectedMode : 'single',
+                    itemStyle:{
+                        normal:{label:{show:true}},
+                        emphasis:{label:{show:true}}
+                    },
+                    data:points
+                }
+            ]
+        };
+
+        // 为echarts对象加载数据 
+        myChart.setOption(option); 
+  };
+    $(function() {
+    $('input[name="daterange"]').daterangepicker({
+    "startDate": "09/12/2016",
+    "endDate": "09/17/2016",
+    "minDate": "09/01/2016",
+    "maxDate": "09/20/2016",
+}, function(start, end, label) {
+  date = end.format('YYYYMMDD');
+  _day = Math.floor((end-start)/24/60/60/1000);
+  drawData(date, _day+1);
+});
+    });
+  drawData(date,_day);
+    </script>
+    
+  </div>
+
+</div>
+
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      祝你平安
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2016 <a href="#">SJTU</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">最近的活动</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript::;">
+              <i class="menu-icon fa bg-green"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">最近一次登录</h4>
+
+                <p>X年X月X日X时X分登录</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Stats tab content -->
+      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+
+<!-- EXTRASCRIPTS -->
+<!-- jQuery 2.2.3 -->
+<script src="static/js/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="static/js/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.6 -->
+<script src="static/js/bootstrap/js/bootstrap.min.js"></script>
+<!-- Sparkline -->
+<script src="static/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+<!-- jvectormap -->
+<script src="static/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="static/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="static/js/plugins/knob/jquery.knob.js"></script>
+<!-- daterangepicker -->
+<script src="static/js/moment.min.js"></script>
+<script src="static/js/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="static/js/plugins/datepicker/bootstrap-datepicker.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="static/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Slimscroll -->
+<script src="static/js/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="static/js/plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="static/js/dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="static/js/dist/js/demo.js"></script>
+    
+    <!-- EXTRASCRIPTS FOR D3-->
+   <!--  <script type="text/javascript" src="sequences.js"></script> -->
+    <script type="text/javascript">
+      // Hack to make this example display correctly in an iframe on bl.ocks.org
+      d3.select(self.frameElement).style("height", "700px");
+    </script>
+</body>
+</html>
+
